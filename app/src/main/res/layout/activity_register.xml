@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:fitsSystemWindows="true"
-    tools:context=".ui.view.MainActivity">
+    tools:context=".ui.view.RegisterActivity">
 
     <RelativeLayout
         android:visibility="visible"
@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dip"
                     android:layout_marginRight="40dp"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="200dp"
                     android:layout_marginBottom="60dp"
                     android:orientation="vertical"
                     android:paddingLeft="0dp"
@@ -67,20 +67,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dip"
                                 android:gravity="left"
-                                android:text="Login"
+                                android:text="Register"
                                 android:textColor="@color/black"
                                 android:textSize="26dip"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:id="@+id/textDescription"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="left"
-                                android:text="Silahkan Log in untuk berselancar, mencoba beragam fitur dan layanan dari kami"
-                                android:textColor="@color/black"
-                                android:textSize="16dip"
                                 android:textStyle="bold"
                                 />
 
@@ -161,6 +150,134 @@
 
                             </com.google.android.material.textfield.TextInputLayout>
 
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="0dp"
+                                app:backgroundTint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:hintTextColor="@color/black"
+                                android:textCursorDrawable="@color/black"
+                                android:hint="Nama Lengkap">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/et_name"
+                                    android:focusable="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10sp"
+                                    android:inputType="text"
+                                    android:textStyle="bold" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="0dp"
+                                app:backgroundTint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:hintTextColor="@color/black"
+                                android:textCursorDrawable="@color/black"
+                                android:hint="Hak Akses">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/et_hakakses"
+                                    android:focusable="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10sp"
+                                    android:inputType="text"
+                                    android:textStyle="bold"
+                                    tools:ignore="DuplicateIds" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="0dp"
+                                app:backgroundTint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:hintTextColor="@color/black"
+                                android:textCursorDrawable="@color/black"
+                                android:hint="Kode Klinik">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/et_kdklinik"
+                                    android:focusable="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10sp"
+                                    android:inputType="text"
+                                    android:textStyle="bold" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="0dp"
+                                app:backgroundTint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:hintTextColor="@color/black"
+                                android:textCursorDrawable="@color/black"
+                                android:hint="Kode Cabang">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/et_kdcabang"
+                                    android:focusable="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10sp"
+                                    android:inputType="text"
+                                    android:textStyle="bold"
+                                    tools:ignore="DuplicateIds" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="0dp"
+                                app:backgroundTint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:hintTextColor="@color/black"
+                                android:textCursorDrawable="@color/black"
+                                android:hint="Email">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/et_email"
+                                    android:focusable="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10sp"
+                                    android:inputType="text"
+                                    android:textStyle="bold"
+                                    tools:ignore="DuplicateIds" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
                             <TextView
                                 android:id="@+id/tv_notif"
                                 android:layout_width="match_parent"
@@ -178,19 +295,20 @@
                                 android:textColor="@color/red" />
 
                             <com.google.android.material.button.MaterialButton
-                                android:id="@+id/btn_login"
+                                android:id="@+id/btn_register"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dip"
                                 android:layout_marginTop="15dp"
                                 android:layout_marginBottom="35dp"
                                 android:background="@drawable/background_blue_rounded"
-                                android:text="Login"
+                                android:text="Register"
                                 android:textSize="16dip"
                                 android:textStyle="bold"
                                 android:textColor="@color/white"
                                 app:backgroundTint="@null"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent" />
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:ignore="DuplicateIds" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -198,13 +316,13 @@
                                 android:layout_marginTop="25dp"
                                 android:layout_gravity="left"
                                 android:gravity="center"
-                                android:text="Belum punya akun?"
+                                android:text="Sudah punya akun?"
                                 android:textSize="18dp"
                                 android:textStyle="bold"
                                 android:textColor="@color/black" />
 
                             <TextView
-                                android:id="@+id/btn_register"
+                                android:id="@+id/btn_login"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -212,7 +330,7 @@
                                 android:padding="10dip"
                                 android:background="@drawable/background_border_transparent"
                                 android:gravity="center"
-                                android:text="Daftar"
+                                android:text="Login"
                                 android:textSize="18dp"
                                 android:textStyle="bold"
                                 android:textColor="@color/black" />
